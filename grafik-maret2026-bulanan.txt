@@ -1,0 +1,65 @@
+- TOKOMULIA ( SITE HOTSPOT )
+"Monthly" Graph (2 Hour Average)
+Monthly Graph
+Max In: 190.57Mb; Average In: 106.31Mb; Current In: 89.10Mb;
+Max Out: 150.90Mb; Average Out: 82.08Mb; Current Out: 67.62Mb;
+
+- POP CIBUNGBULANG ( SITE HOTSPOT )
+"Monthly" Graph (2 Hour Average)
+Monthly Graph
+Max In: 80.30Mb; Average In: 35.38Mb; Current In: 29.48Mb;
+Max Out: 16.52Mb; Average Out: 4.58Mb; Current Out: 4.57Mb;
+
+- POP TELE ( SITE HOTSPOT )
+"Monthly" Graph (2 Hour Average)
+Monthly Graph
+Max In: 48.79Mb; Average In: 22.95Mb; Current In: 10.78Mb;
+Max Out: 7.20Mb; Average Out: 2.25Mb; Current Out: 1.79Mb;
+
+- POP HAMBARO ( SITE HOTSPOT )
+"Monthly" Graph (2 Hour Average)
+Monthly Graph
+Max In: 388.15Mb; Average In: 216.65Mb; Current In: 119.85Mb;
+Max Out: 42.80Mb; Average Out: 23.12Mb; Current Out: 15.50Mb;
+
+- POP KALURAHAN ( SITE HOTSPOT )
+"Monthly" Graph (2 Hour Average)
+Monthly Graph
+Max In: 255.22Mb; Average In: 133.31Mb; Current In: 91.27Mb;
+Max Out: 29.11Mb; Average Out: 13.94Mb; Current Out: 8.79Mb;
+
+- POP CIGUDEG ( SITE HOTSPOT )
+"Monthly" Graph (2 Hour Average)
+Monthly Graph
+Max In: 591.11Mb; Average In: 325.87Mb; Current In: 214.40Mb;
+Max Out: 55.56Mb; Average Out: 28.13Mb; Current Out: 22.49Mb;
+
+- DESAINTER-1 ( SITE HOTSPOT )
+"Monthly" Graph (2 Hour Average)
+Monthly Graph
+Max In: 1.17Gb; Average In: 695.68Mb; Current In: 507.77Mb;
+Max Out: 116.43Mb; Average Out: 65.32Mb; Current Out: 54.02Mb;
+
+- DESAINTER-2 ( SITE HOTSPOT )
+"Monthly" Graph (2 Hour Average)
+Monthly Graph
+Max In: 316.60Mb; Average In: 188.27Mb; Current In: 112.04Mb;
+Max Out: 40.35Mb; Average Out: 18.93Mb; Current Out: 15.39Mb;
+
+- DIST 400 ( SITE HOTSPOT )
+"Monthly" Graph (2 Hour Average)
+Monthly Graph
+Max In: 390.52Mb; Average In: 244.79Mb; Current In: 185.21Mb;
+Max Out: 44.32Mb; Average Out: 24.67Mb; Current Out: 25.16Mb;
+
+- DISTRIBUSI PUBLIK ( CORE ROUTER )
+"Monthly" Graph (2 Hour Average)
+Monthly Graph
+Max In: 3.61Gb; Average In: 2.30Gb; Current In: 1.61Gb;
+Max Out: 3.40Gb; Average Out: 2.25Gb; Current Out: 1.61Gb;
+
+- TO OLT  ( SITE HOME )
+"Monthly" Graph (2 Hour Average)
+Monthly Graph
+Max In: 2.68Gb; Average In: 1.64Gb; Current In: 1.91Gb;
+Max Out: 231.09Mb; Average Out: 147.10Mb; Current Out: 210.89Mb;

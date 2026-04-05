@@ -1,0 +1,28 @@
+📌 DISTRIBUSI PUBLIK – CORE ROUTER
+
+Max In: 3.08 Gbps
+Average In: 2.16 Gbps
+Current In: 1.51 Gbps
+
+Satuan pakai Gbps biar konsisten & rapi untuk backbone/core link.
+
+📊 ESTIMASI DATA TRAFIK INBOUND (Gbps)
+(berdasarkan pembacaan grafik harian)
+
+Jam	In (Gbps)
+18	1.50
+20	2.30
+22	2.50
+00	2.10
+02	0.55
+04	0.30
+06	0.50
+08	1.00
+10	1.50
+12	1.90
+14	2.30
+16	2.50
+18	2.20
+20	2.60
+22	3.08 🔺 (Peak)
+00	1.80

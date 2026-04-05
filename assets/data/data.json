@@ -1,0 +1,184 @@
+{
+  "report": {
+    "title": "Laporan Bulanan Jobdesk & Monitoring Jaringan",
+    "period": "Februari 2026",
+    "periodFull": "01 Februari 2026 - 28 Februari 2026",
+    "division": "Tim NOC (Network Operation Center)",
+    "company": "SDNET Internet Provider",
+    "generatedDate": "02 Maret 2026"
+  },
+  "executiveSummary": {
+    "highlights": [
+      "8 insiden major berhasil ditangani termasuk gangguan upstream",
+      "Traffic jaringan stabil di kisaran 3.59 Gbps (Core Router)",
+      "6 incident FO Cut dan gangguan berhasil resolved",
+      "IP Publik blacklist RBL berhasil dipulihkan"
+    ],
+    "availability": "---",
+    "totalJobdesk": "---",
+    "completed": "---",
+    "inProgress": "---",
+    "pending": "---"
+  },
+  "highIssues": [
+    {
+      "title": "FO CUT CIBUNGBULANG – CIARUTEN ILIR",
+      "problem": "FO Cut - ODP dalam kondisi terlepas/copotan, diduga akibat vandalisme",
+      "action": "Splicing, jumper ulang, dan pemasangan closure baru",
+      "duration": "5 jam 40 menit",
+      "status": "Resolved"
+    },
+    {
+      "title": "FO CUT MAIN LINK LL-SDNET JAVA (17 Feb)",
+      "problem": "FO Cut pada main link upstream LL-SDNET JAVA",
+      "action": "Splice FO oleh tim pusat",
+      "duration": "2 jam 03 menit",
+      "status": "Resolved"
+    },
+    {
+      "title": "IFORTE – Link Down (17 Feb)",
+      "problem": "FO Cut di jarak 12.3 Km dari Sentul",
+      "action": "Splice FO",
+      "duration": "2 jam 16 menit",
+      "status": "Resolved"
+    },
+    {
+      "title": "FO CUT MAIN LINK LL-SDNET JAVA (22 Feb)",
+      "problem": "FO Cut pada main link upstream LL-SDNET JAVA (kedua kalinya)",
+      "action": "Perbaikan oleh tim pusat",
+      "duration": "46 menit",
+      "status": "Resolved"
+    },
+    {
+      "title": "FO CUT & REDAMAN TINGGI – DENY CISAUK (22 Feb)",
+      "problem": "FO Cut & redaman tinggi pada segmen SERVER SITU UDIK ke SITE DENY CISAUK",
+      "action": "Penyambungan ulang kabel putus dan banding",
+      "duration": "3 jam 48 menit",
+      "status": "Resolved"
+    },
+    {
+      "title": "FO CUT PON 7 HSGQ KALURAHAN – ACONK (23 Feb)",
+      "problem": "FO Cut PON 7 HSGQ Kalurahan akibat aktivitas penebangan pohon",
+      "action": "Jumper FO 100 meter",
+      "duration": "53 menit",
+      "status": "Resolved"
+    },
+    {
+      "title": "IP Publik Terblacklist RBL (28 Feb)",
+      "problem": "IP Publik terblacklist RBL - reputasi IP kotor",
+      "action": "Di-fix oleh tim pusat IDC",
+      "status": "Resolved"
+    },
+    {
+      "title": "Perangkat ZIMMLINK Hotspot Kurang Optimal",
+      "problem": "Susah login & internet kurang optimal di site hotspot menggunakan perangkat ZIMMLINK",
+      "action": "Investigasi dan monitoring lanjutan",
+      "status": "Dalam Penanganan"
+    }
+  ],
+  "networkGraphs": {
+    "daily": [
+      {"name": "DESAINTER1", "file": "daily-DESAINTER1-site-hotspot.png"},
+      {"name": "DESAINTER2", "file": "daily-DESAINTER2-site-hotspot.png"},
+      {"name": "DIST-400", "file": "daily-DIST-400-site-hotspot.png"},
+      {"name": "POP CIBUNGBULANG", "file": "daily-POP-CIBUNGBULANG-site-hotspot.png"},
+      {"name": "POP CIGUDEG", "file": "daily-POP-CIGUDEG-site-hotspot.png"},
+      {"name": "POP HAMBARO", "file": "daily-POP-HAMBARO-site-hotspot.png"},
+      {"name": "POP KALURAHAN", "file": "daily-POP-KALURAHAN-site-hotspot.png"},
+      {"name": "POP TELE", "file": "daily-POP-TELE-site-hotspot.png"},
+      {"name": "TO OLT", "file": "daily-TO-OLT-site-home.png"},
+      {"name": "TOKOMULIA", "file": "daily-TOKOMULIA-site-hotspot.png"},
+      {"name": "DIST PUBLIK", "file": "daily-dist-publik.png"}
+    ],
+    "monthly": [
+      {"name": "DESAINTER1", "file": "monthly-DESAINTER1-site-hotspot.png"},
+      {"name": "DESAINTER2", "file": "monthly-DESAINTER2-site-hotspot.png"},
+      {"name": "DIST-400", "file": "monthly-DIST-400-site-hotspot.png"},
+      {"name": "DIST PUBLIK", "file": "monthly-DIST-PUBLIK.png"},
+      {"name": "POP CIBUNGBULANG", "file": "monthly-POP-CIBUNGBULANG-site-hotspot.png"},
+      {"name": "POP CIGUDEG", "file": "monthly-POP-CIGUDEG-site-hotspot.png"},
+      {"name": "POP HAMBARO", "file": "monthly-POP-HAMBARO-site-hotspot.png"},
+      {"name": "POP KALURAHAN", "file": "monthly-POP-KALURAHAN-site-hotspot.png"},
+      {"name": "POP TELE", "file": "monthly-POP-TELE-site-hotspot.png"},
+      {"name": "TO OLT", "file": "monthly-TO-OLT-site-home.png"},
+      {"name": "TOKOMULIA", "file": "monthly-TOKOMULIA-site-hotspot.png"}
+    ]
+  },
+  "jobdeskStats": {
+    "february": {
+      "period": "01 Februari 2026 - 28 Februari 2026",
+      "total": "---",
+      "completed": "---",
+      "inProgress": "---",
+      "pending": "---",
+      "completionRate": "---",
+      "byType": [],
+      "byArea": [],
+      "topTechnicians": []
+    },
+    "january": {
+      "period": "01 Januari 2026 - 31 Januari 2026",
+      "total": 366,
+      "completed": 357,
+      "inProgress": 2,
+      "pending": 1,
+      "completionRate": 97.5,
+      "byType": [
+        {"type": "Troubleshooting", "count": 89},
+        {"type": "Maintenance", "count": 72},
+        {"type": "PSB", "count": 64},
+        {"type": "FO CUT", "count": 30},
+        {"type": "GANTI ALAT", "count": 28},
+        {"type": "DISMANTLE", "count": 28},
+        {"type": "PELEBARAN", "count": 17},
+        {"type": "INSTALASI", "count": 15},
+        {"type": "Migrasi", "count": 9},
+        {"type": "PINDAH RUMAH", "count": 5}
+      ],
+      "byArea": [
+        {"area": "HOME", "count": 195},
+        {"area": "HOTSPOT", "count": 144},
+        {"area": "SERVER", "count": 15},
+        {"area": "POP", "count": 3}
+      ],
+      "topTechnicians": [
+        {"name": "FAHMI FAUZUDIN", "count": 91},
+        {"name": "M SYAHRUL", "count": 89},
+        {"name": "TAUFIK RAHMAN", "count": 87},
+        {"name": "Jajat Sudrajat", "count": 86},
+        {"name": "Mohammad Padli Padilah", "count": 82},
+        {"name": "ABDUL MATIN", "count": 80},
+        {"name": "ANWAR LESMANA", "count": 73},
+        {"name": "ABDUL IRFAN SANJAYA", "count": 48},
+        {"name": "DIMAS AHMAD MUGANI", "count": 46}
+      ]
+    }
+  },
+  "comparison": {
+    "totalChange": {
+      "value": "---",
+      "percentage": "---",
+      "trend": "---"
+    },
+    "completedChange": {
+      "value": "---",
+      "percentage": "---",
+      "trend": "---"
+    },
+    "keyChanges": []
+  },
+  "conclusion": {
+    "summary": [
+      "Performa tim NOC bulan Februari 2026 menunjukkan konsistensi dalam menangani gangguan",
+      "8 insiden major berhasil ditangani termasuk gangguan upstream (LL-SDNET JAVA & IFORTE)",
+      "Traffic jaringan stabil di kisaran 3.59 Gbps (Core Router)",
+      "Penanganan FO Cut CIBUNGBULANG dan DENY CISAUK berhasil dilakukan dengan baik"
+    ],
+    "improvements": [
+      "Optimasi monitoring link upstream (LL-SDNET JAVA) untuk mencegah gangguan berulang",
+      "Peningkatan keamanan jalur FO untuk mencegah vandalisme (kasus CIBUNGBULANG)",
+      "Penguatan monitoring perangkat ZIMMLINK pada OLT HSGQ",
+      "Evaluasi dan pembersihan IP Publik untuk mencegah blacklist RBL"
+    ]
+  }
+}

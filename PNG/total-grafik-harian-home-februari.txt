@@ -1,0 +1,26 @@
+📌 SITE HOME – TO OLT
+
+Max In: 2.51 Gb
+Average In: 1.83 Gb
+Current In: 1.32 Gb
+
+Satuan saya pakai Gbps biar konsisten & enak dibaca untuk backbone/home link.
+
+📊 ESTIMASI DATA TRAFIK INBOUND (Gbps)
+Jam	In (Gbps)
+18	1.20
+20	1.90
+22	2.00
+00	1.60
+02	0.45
+04	0.25
+06	0.40
+08	0.80
+10	1.20
+12	1.50
+14	1.70
+16	1.80
+18	1.60
+20	2.10
+22	2.51 🔺 (Peak)
+00	1.40

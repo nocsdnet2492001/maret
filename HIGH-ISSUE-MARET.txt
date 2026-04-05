@@ -1,0 +1,92 @@
+============================================= POP KALURAHAN TERSAMBAR ====================================================================
+
+05 MARET 2026
+* Tiket : *SDN3236050326*
+* Status : *CLOSED*
+* Segment : *POP KALURAHAN*
+* Down Time : *05-03-2026 15:48 WIB*
+* Up Time : *05-03-2026 16:17 WIB*
+* Durasi Gangguan : *29 menit*
+* Area Terdampak : *POP KALURAHAN*
+* Root Cause : *LINK LOSS DIDUGA AKIBAT GANGGUAN PADA JALUR KE BAWAH (DROP CORE)*
+* Action : *PENORMALAN KONEKSI (RESEATING / PERAPIHAN JALUR)*
+
+============================================= POP KALURAHAN TERSAMBAR ====================================================================
+
+============================================= SDNET<>CIGUDEG ====================================================================
+
+16 MARET 2026
+
+* Tiket : *SDN3343160326*
+* Status : *CLOSED*
+* Segment : *POP CIGUDEG <> SERVER SITU UDIK*
+* Down Time : *16-03-2026 14:51 WIB*
+* Up Time : *16-03-2026 18:59 WIB*
+* Durasi Gangguan : *4 jam 8 menit*
+* Area Terdampak : *LINK CIGUDEG TO SERVER (JAVA)*
+* Root Cause : *SFP PON 2 OFF*
+* Action : *PENGGANTIAN SFP*
+Catatan: Selama gangguan berlangsung, trafik dialihkan melalui link backup (IFORTE) sehingga layanan tetap berjalan.
+
+============================================= SDNET<>CIGUDEG ====================================================================
+
+17 MARET 2026
+
+* Tiket : *SDN3344170326*
+* Status : *CLOSED*
+* Segment : *SERVER <> POP CIGUDEG*
+* Down Time : *17-03-2026 09:51 WIB*
+* Up Time : *17-03-2026 14:01 WIB*
+* Durasi Gangguan : *4 jam 10 menit*
+* Area Terdampak : *LINK BACKBONE SERVER TO POP CIGUDEG*
+* Root Cause : *FO CUT PARTIAL DI ±3KM DARI POP CIGUDEG (PORT 22 OTB TERPUTUS)*
+* Action : *PENYAMBUNGAN ULANG KABEL DI CLOSURE PERTIGAAN*
+Catatan: Insiden ini merupakan lanjutan dari gangguan tanggal 16 Maret 2026 yang awalnya diperkirakan akibat perangkat. Setelah investigasi lanjutan, ditemukan adanya partial fiber cut.
+Selama periode gangguan, layanan tidak terdampak signifikan karena menggunakan core fiber alternatif.
+
+============================================= SDNET<>CIGUDEG ====================================================================
+
+============================================= POP KALURAHAN TERSAMBAR ====================================================================
+
+20 MARET 2026
+* Tiket : *SDN3357200326*
+* Status : *CLOSED*
+* Segment : *POP KALURAHAN (JALUR RADIO)*
+* Down Time : *20-03-2026 22:34 WIB*
+* Up Time : *20-03-2026 23:19 WIB*
+* Durasi Gangguan : *45 menit*
+* Area Terdampak : *LINK RADIO POP KALURAHAN (SUM PUNG & TONJONG)*
+* Root Cause : *DEVICE FAILURE (RADIO MIMOSA & RADIO LINK ERROR)*
+* Action : *PENGGANTIAN RADIO AP LHG DAN RADIO MIMOSA*
+
+============================================= POP KALURAHAN TERSAMBAR ====================================================================
+
+============================================= POP CIBUNGBULANG REDAMAN NAIK ====================================================================
+
+22 MARET 2026
+* Tiket : *SDN3366220326*
+* Status : *CLOSED*
+* Segment : *POP CIBUNGBULANG <> PADMON*
+* Down Time : *22-03-2026 23:28 WIB*
+* Up Time : *23-03-2026 02:28 WIB*
+* Durasi Gangguan : *2 jam 59 menit*
+* Area Terdampak : *PON 2, PON 3, PON 4 OLT HIOSO CIBUNGBULANG*
+* Root Cause : *KABEL MENGALAMI BENDING DI ±1.860M (ODP 5) MENYEBABKAN REDAMAN NAIK DAN LOSS PADA BEBERAPA PON*
+* Action : *PERAPIHAN DAN PELURUSAN KABEL DI ODP 5*
+
+============================================= POP CIBUNGBULANG REDAMAN NAIK ====================================================================
+
+============================================= POP KALURAHAN TERSAMBAR ====================================================================
+
+29 MARET 2026
+* Tiket : *SDN3447290326*
+* Status : *CLOSED*
+* Segment : *POP KALURAHAN*
+* Down Time : *29-03-2026 14:22 WIB*
+* Up Time : *29-03-2026 15:08 WIB*
+* Durasi Gangguan : *46 menit*
+* Area Terdampak : *POP KALURAHAN*
+* Root Cause : *POWER ISSUE (MCB TRIP DUE TO LIGHTNING)*
+* Action : *MCB RESET*
+
+============================================= POP KALURAHAN TERSAMBAR ====================================================================

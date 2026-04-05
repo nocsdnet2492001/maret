@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Laporan Bulanan Jobdesk & Monitoring Jaringan - Tim NOC SDNET">
+    <meta name="author" content="SDNET NOC Team">
+    <title>Laporan Bulanan NOC - Maret 2026 | SDNET</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="presentation">
+        <!-- Progress Line -->
+        <div class="progress-line" id="progress-line"></div>
+
+        <!-- ================================
+         SLIDE 1: COVER
+         ================================ -->
+        <section class="slide slide-cover active" data-slide="0">
+            <div class="cover-content">
+                <div class="cover-logo">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET Logo" style="height: 100px;">
+                </div>
+                <h1 class="cover-title">Laporan Bulanan Jobdesk & Monitoring Jaringan</h1>
+                <p class="cover-subtitle">Network Operation Center Report</p>
+
+                <div class="cover-meta">
+                    <div class="cover-meta-item">
+                        <div class="cover-meta-label">Periode Laporan</div>
+                        <div class="cover-meta-value">Maret 2026</div>
+                    </div>
+                    <div class="cover-meta-item">
+                        <div class="cover-meta-label">Divisi</div>
+                        <div class="cover-meta-value">Tim NOC</div>
+                    </div>
+                    <div class="cover-meta-item">
+                        <div class="cover-meta-label">Perusahaan</div>
+                        <div class="cover-meta-value">PT. Sarana Digital Network</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+         SLIDE 2: EXECUTIVE SUMMARY
+         ================================ -->
+        <section class="slide" data-slide="1">
+            <header class="slide-header">
+                <div class="slide-header-left">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET" class="header-logo">
+                    <div class="slide-number">02 / 12</div>
+                </div>
+                <h2 class="slide-title">Ringkasan Eksekutif</h2>
+                <p class="slide-description">Overview kondisi jaringan dan highlight utama bulan Maret 2026</p>
+            </header>
+
+            <div class="slide-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">286</div>
+                        <div class="stat-label">Total Jobdesk</div>
+                        <span class="stat-change down">↓ -59 dari Februari</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">279</div>
+                        <div class="stat-label">Selesai</div>
+                        <span class="stat-change down">↓ -63 dari Februari</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">97.6%</div>
+                        <div class="stat-label">Completion Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">6</div>
+                        <div class="stat-label">Major Incident</div>
+                        <span class="stat-change up">Resolved</span>
+                    </div>
+                </div>
+
+                <div class="highlights-grid" style="margin-top: var(--spacing-xl);">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Penanganan Insiden Cepat</h4>
+                            <p>6 insiden major berhasil ditangani, termasuk perbaikan FO dan gangguan perangkat</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Response Time Optimal</h4>
+                            <p>Semua insiden major ditangani dengan resolusi penuh oleh tim NOC</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Traffic Stabil</h4>
+                            <p>Traffic backbone stabil di 3.08 Gbps (Core Router) dan 2.51 Gbps (Home)</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                                <polyline points="17 6 23 6 23 12" />
+                            </svg>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Gangguan Jaringan Tertangani</h4>
+                            <p>Gangguan link backbone Cigudeg dan insiden power/radio di Kalurahan berhasil diatasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+         SLIDE 3: HIGH ISSUE
+         ================================ -->
+        <section class="slide" data-slide="2">
+            <header class="slide-header">
+                <div class="slide-header-left">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET" class="header-logo">
+                    <div class="slide-number">03 / 12</div>
+                </div>
+                <h2 class="slide-title">High Issue / Major Incident</h2>
+                <p class="slide-description">Daftar gangguan prioritas tinggi bulan Maret 2026, beserta evaluasi
+                    perbandingan dari bulan sebelumnya</p>
+            </header>
+
+            <div class="slide-content" style="overflow-y: auto;">
+                <!-- Perbandingan High Issue -->
+                <div class="stats-grid" style="margin-bottom: var(--spacing-xl);">
+                    <div class="stat-card">
+                        <div class="stat-value">6</div>
+                        <div class="stat-label">Total Insiden (Maret)</div>
+                        <span class="stat-change down">↓ -1 dari Februari</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">7</div>
+                        <div class="stat-label">Total Insiden (Februari)</div>
+                        <span class="stat-change up">Bulan Sebelumnya</span>
+                    </div>
+                    <div class="stat-card"
+                        style="grid-column: span 2; display: flex; flex-direction: column; justify-content: center; text-align: left; align-items: flex-start;">
+                        <div class="stat-label"
+                            style="font-size: 0.95rem; font-weight: 600; color: var(--color-primary); margin-bottom: 8px;">
+                            Informasi Perbandingan</div>
+                        <p
+                            style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0; font-weight: 400;">
+                            Tren insiden major mengalami penurunan dari 7 (Februari) menjadi 6 (Maret). Di Februari,
+                            masalah didominasi FO Cut jalur backbone akibat vandalisme/galian. Di Maret, insiden
+                            dipengaruhi cuaca ekstrim (sambaran petir POP Kalurahan) & kegagalan SFP/radio.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="issues-list">
+                    <!-- Issue 1: POP KALURAHAN -->
+                    <div class="issue-card">
+                        <div class="issue-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                <line x1="12" y1="9" x2="12" y2="13" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <div class="issue-body">
+                            <h4 class="issue-title">POP KALURAHAN TERSAMBAR (05 Mar)</h4>
+                            <p class="issue-problem"><strong>Problem:</strong> LINK LOSS DIDUGA AKIBAT GANGGUAN PADA
+                                JALUR KE BAWAH (DROP CORE)</p>
+                            <p class="issue-action"><strong>Action:</strong> PENORMALAN KONEKSI (RESEATING / PERAPIHAN
+                                JALUR)</p>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                                <strong>Tiket:</strong> SDN3236050326 | <strong>Area:</strong> POP KALURAHAN
+                            </p>
+                        </div>
+                        <div class="issue-meta">
+                            <div class="issue-duration">⏱️ 29 menit</div>
+                            <span class="issue-status resolved">✓ Resolved</span>
+                        </div>
+                    </div>
+
+                    <!-- Issue 2: CIGUDEG 16 Mar -->
+                    <div class="issue-card">
+                        <div class="issue-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                <line x1="12" y1="9" x2="12" y2="13" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <div class="issue-body">
+                            <h4 class="issue-title">CIGUDEG <> SERVER SITU UDIK (16 Mar)</h4>
+                            <p class="issue-problem"><strong>Problem:</strong> SFP PON 2 OFF</p>
+                            <p class="issue-action"><strong>Action:</strong> PENGGANTIAN SFP</p>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                                <strong>Tiket:</strong> SDN3343160326 | <strong>Area:</strong> LINK CIGUDEG TO SERVER
+                                (JAVA)
+                            </p>
+                        </div>
+                        <div class="issue-meta">
+                            <div class="issue-duration">⏱️ 4 jam 8 menit</div>
+                            <span class="issue-status resolved">✓ Resolved</span>
+                        </div>
+                    </div>
+
+                    <!-- Issue 3: CIGUDEG 17 Mar -->
+                    <div class="issue-card">
+                        <div class="issue-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                <line x1="12" y1="9" x2="12" y2="13" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <div class="issue-body">
+                            <h4 class="issue-title">SERVER <> POP CIGUDEG (17 Mar)</h4>
+                            <p class="issue-problem"><strong>Problem:</strong> FO CUT PARTIAL DI ±3KM DARI POP CIGUDEG
+                                (PORT 22 OTB TERPUTUS)</p>
+                            <p class="issue-action"><strong>Action:</strong> PENYAMBUNGAN ULANG KABEL DI CLOSURE
+                                PERTIGAAN</p>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                                <strong>Tiket:</strong> SDN3344170326 | <strong>Area:</strong> LINK BACKBONE SERVER TO
+                                POP CIGUDEG
+                            </p>
+                        </div>
+                        <div class="issue-meta">
+                            <div class="issue-duration">⏱️ 4 jam 10 menit</div>
+                            <span class="issue-status resolved">✓ Resolved</span>
+                        </div>
+                    </div>
+
+                    <!-- Issue 4: KALURAHAN 20 Mar -->
+                    <div class="issue-card">
+                        <div class="issue-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                <line x1="12" y1="9" x2="12" y2="13" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <div class="issue-body">
+                            <h4 class="issue-title">POP KALURAHAN JALUR RADIO (20 Mar)</h4>
+                            <p class="issue-problem"><strong>Problem:</strong> DEVICE FAILURE (RADIO MIMOSA & RADIO LINK
+                                ERROR)</p>
+                            <p class="issue-action"><strong>Action:</strong> PENGGANTIAN RADIO AP LHG DAN RADIO MIMOSA
+                            </p>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                                <strong>Tiket:</strong> SDN3357200326 | <strong>Area:</strong> LINK RADIO POP KALURAHAN
+                            </p>
+                        </div>
+                        <div class="issue-meta">
+                            <div class="issue-duration">⏱️ 45 menit</div>
+                            <span class="issue-status resolved">✓ Resolved</span>
+                        </div>
+                    </div>
+
+                    <!-- Issue 5: CIBUNGBULANG 22 Mar -->
+                    <div class="issue-card">
+                        <div class="issue-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                <line x1="12" y1="9" x2="12" y2="13" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <div class="issue-body">
+                            <h4 class="issue-title">POP CIBUNGBULANG REDAMAN NAIK (22 Mar)</h4>
+                            <p class="issue-problem"><strong>Problem:</strong> KABEL MENGALAMI BENDING DI ±1.860M (ODP
+                                5) MENYEBABKAN REDAMAN NAIK</p>
+                            <p class="issue-action"><strong>Action:</strong> PERAPIHAN DAN PELURUSAN KABEL DI ODP 5</p>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                                <strong>Tiket:</strong> SDN3366220326 | <strong>Area:</strong> PON 2, PON 3, PON 4 OLT
+                                HIOSO
+                            </p>
+                        </div>
+                        <div class="issue-meta">
+                            <div class="issue-duration">⏱️ 2 jam 59 menit</div>
+                            <span class="issue-status resolved">✓ Resolved</span>
+                        </div>
+                    </div>
+
+                    <!-- Issue 6: KALURAHAN 29 Mar -->
+                    <div class="issue-card">
+                        <div class="issue-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                <line x1="12" y1="9" x2="12" y2="13" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <div class="issue-body">
+                            <h4 class="issue-title">POP KALURAHAN TERSAMBAR (29 Mar)</h4>
+                            <p class="issue-problem"><strong>Problem:</strong> POWER ISSUE (MCB TRIP DUE TO LIGHTNING)
+                            </p>
+                            <p class="issue-action"><strong>Action:</strong> MCB RESET</p>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                                <strong>Tiket:</strong> SDN3447290326 | <strong>Area:</strong> POP KALURAHAN
+                            </p>
+                        </div>
+                        <div class="issue-meta">
+                            <div class="issue-duration">⏱️ 46 menit</div>
+                            <span class="issue-status resolved">✓ Resolved</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+         SLIDE 4: NETWORK MONITORING
+         ================================ -->
+        <section class="slide" data-slide="3">
+            <header class="slide-header">
+                <div class="slide-header-left">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET" class="header-logo">
+                    <div class="slide-number">04 / 12</div>
+                </div>
+                <h2 class="slide-title">Monitoring & Grafik Jaringan</h2>
+                <p class="slide-description">Grafik monitoring jaringan berbasis file harian dan bulanan</p>
+            </header>
+
+            <div class="slide-content" style="overflow-y: auto;">
+                <!-- Monthly Graphs -->
+                <div class="graph-section">
+                    <h3 class="graph-section-title">Grafik Bulanan (Monthly)</h3>
+                    <div class="graph-grid" id="monthly-graphs">
+                        <!-- Dynamically populated, but also static fallback -->
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/monthly-DESAINTER-1-site-hotspot.png', 'DESAINTER1 Monthly')">
+                            <img src="PNG/monthly-DESAINTER-1-site-hotspot.png" alt="DESAINTER1" loading="lazy">
+                            <div class="graph-card-title">DESAINTER1</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/monthly-DESAINTER-2-site-hotspot.png', 'DESAINTER2 Monthly')">
+                            <img src="PNG/monthly-DESAINTER-2-site-hotspot.png" alt="DESAINTER2" loading="lazy">
+                            <div class="graph-card-title">DESAINTER2</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/monthly-DIST-400-site-hotspot.png', 'DIST-400 Monthly')">
+                            <img src="PNG/monthly-DIST-400-site-hotspot.png" alt="DIST-400" loading="lazy">
+                            <div class="graph-card-title">DIST-400</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/monthly-DIST-PUBLIK-core-router.png', 'DIST PUBLIK Monthly')">
+                            <img src="PNG/monthly-DIST-PUBLIK-core-router.png" alt="DIST PUBLIK" loading="lazy">
+                            <div class="graph-card-title">DIST PUBLIK</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/monthly-POP-CIBUNGBULANG-site-hotspot.png', 'POP CIBUNGBULANG Monthly')">
+                            <img src="PNG/monthly-POP-CIBUNGBULANG-site-hotspot.png" alt="POP CIBUNGBULANG"
+                                loading="lazy">
+                            <div class="graph-card-title">POP CIBUNGBULANG</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/monthly-POP-CIGUDEG-site-hotspot.png', 'POP CIGUDEG Monthly')">
+                            <img src="PNG/monthly-POP-CIGUDEG-site-hotspot.png" alt="POP CIGUDEG" loading="lazy">
+                            <div class="graph-card-title">POP CIGUDEG</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/monthly-POP-HAMBARO-site-hotspot.png', 'POP HAMBARO Monthly')">
+                            <img src="PNG/monthly-POP-HAMBARO-site-hotspot.png" alt="POP HAMBARO" loading="lazy">
+                            <div class="graph-card-title">POP HAMBARO</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/monthly-POP-KALURAHAN-site-hotspot.png', 'POP KALURAHAN Monthly')">
+                            <img src="PNG/monthly-POP-KALURAHAN-site-hotspot.png" alt="POP KALURAHAN" loading="lazy">
+                            <div class="graph-card-title">POP KALURAHAN</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/monthly-POP-TELETUBIS-site-hotspot.png', 'POP TELE Monthly')">
+                            <img src="PNG/monthly-POP-TELETUBIS-site-hotspot.png" alt="POP TELE" loading="lazy">
+                            <div class="graph-card-title">POP TELE</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/monthly-TO-OLT-site-home.png', 'TO OLT Monthly')">
+                            <img src="PNG/monthly-TO-OLT-site-home.png" alt="TO OLT" loading="lazy">
+                            <div class="graph-card-title">TO OLT</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/monthly-TOKOMULIA-site-hotspot.png', 'TOKOMULIA Monthly')">
+                            <img src="PNG/monthly-TOKOMULIA-site-hotspot.png" alt="TOKOMULIA" loading="lazy">
+                            <div class="graph-card-title">TOKOMULIA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Daily Graphs -->
+                <div class="graph-section">
+                    <h3 class="graph-section-title">Grafik Harian (Daily)</h3>
+                    <div class="graph-grid" id="daily-graphs">
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/daily-DESAINTER-1-site-hotspot.png', 'DESAINTER1 Daily')">
+                            <img src="PNG/daily-DESAINTER-1-site-hotspot.png" alt="DESAINTER1" loading="lazy">
+                            <div class="graph-card-title">DESAINTER1</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/daily-DESAINTER-2-site-hotspot.png', 'DESAINTER2 Daily')">
+                            <img src="PNG/daily-DESAINTER-2-site-hotspot.png" alt="DESAINTER2" loading="lazy">
+                            <div class="graph-card-title">DESAINTER2</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/daily-DIST-400-site-hotspot.png', 'DIST-400 Daily')">
+                            <img src="PNG/daily-DIST-400-site-hotspot.png" alt="DIST-400" loading="lazy">
+                            <div class="graph-card-title">DIST-400</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/daily-DIST-PUBLIK-core-router.png', 'DIST PUBLIK Daily')">
+                            <img src="PNG/daily-DIST-PUBLIK-core-router.png" alt="DIST PUBLIK" loading="lazy">
+                            <div class="graph-card-title">DIST PUBLIK</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/daily-POP-CIBUNGBULANG-site-hotspot.png', 'POP CIBUNGBULANG Daily')">
+                            <img src="PNG/daily-POP-CIBUNGBULANG-site-hotspot.png" alt="POP CIBUNGBULANG"
+                                loading="lazy">
+                            <div class="graph-card-title">POP CIBUNGBULANG</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/daily-POP-CIGUDEG-site-hotspot.png', 'POP CIGUDEG Daily')">
+                            <img src="PNG/daily-POP-CIGUDEG-site-hotspot.png" alt="POP CIGUDEG" loading="lazy">
+                            <div class="graph-card-title">POP CIGUDEG</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/daily-POP-HAMBARO-site-hotspot.png', 'POP HAMBARO Daily')">
+                            <img src="PNG/daily-POP-HAMBARO-site-hotspot.png" alt="POP HAMBARO" loading="lazy">
+                            <div class="graph-card-title">POP HAMBARO</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/daily-POP-KALURAHAN-site-hotspot.png', 'POP KALURAHAN Daily')">
+                            <img src="PNG/daily-POP-KALURAHAN-site-hotspot.png" alt="POP KALURAHAN" loading="lazy">
+                            <div class="graph-card-title">POP KALURAHAN</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/daily-POP-TELETUBIS-site-hotspot.png', 'POP TELE Daily')">
+                            <img src="PNG/daily-POP-TELETUBIS-site-hotspot.png" alt="POP TELE" loading="lazy">
+                            <div class="graph-card-title">POP TELE</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/daily-TO-OLT-site-home.png', 'TO OLT Daily')">
+                            <img src="PNG/daily-TO-OLT-site-home.png" alt="TO OLT" loading="lazy">
+                            <div class="graph-card-title">TO OLT</div>
+                        </div>
+                        <div class="graph-card"
+                            onclick="window.presentation?.openModal('PNG/daily-TOKOMULIA-site-hotspot.png', 'TOKOMULIA Daily')">
+                            <img src="PNG/daily-TOKOMULIA-site-hotspot.png" alt="TOKOMULIA" loading="lazy">
+                            <div class="graph-card-title">TOKOMULIA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+         SLIDE 5: TRAFFIC PERFORMANCE SUMMARY
+         ================================ -->
+        <section class="slide" data-slide="4">
+            <header class="slide-header">
+                <div class="slide-header-left">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET" class="header-logo">
+                    <div class="slide-number">05 / 12</div>
+                </div>
+                <h2 class="slide-title">Analisis Traffic - Performance Summary</h2>
+                <p class="slide-description">Data traffic bandwidth per site - Bulan Maret 2026</p>
+            </header>
+
+            <div class="slide-content" style="overflow-y: auto;">
+                <div class="card">
+                    <table class="traffic-table">
+                        <thead>
+                            <tr>
+                                <th>Site</th>
+                                <th>Kategori</th>
+                                <th>Max In</th>
+                                <th>Avg In</th>
+                                <th>Current In</th>
+                                <th>Max Out</th>
+                                <th>Avg Out</th>
+                                <th>Current Out</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>DISTRIBUSI PUBLIK (CORE ROUTER)</strong></td>
+                                <td><span class="traffic-badge core">Core</span></td>
+                                <td class="traffic-value high">3.74 Gb</td>
+                                <td class="traffic-value">2.45 Gb</td>
+                                <td class="traffic-value">1.40 Gb</td>
+                                <td class="traffic-value high">3.44 Gb</td>
+                                <td class="traffic-value">2.37 Gb</td>
+                                <td class="traffic-value">1.39 Gb</td>
+                            </tr>
+                            <tr>
+                                <td><strong>TO OLT (SITE HOME)</strong></td>
+                                <td><span class="traffic-badge home">Home</span></td>
+                                <td class="traffic-value high">2.81 Gb</td>
+                                <td class="traffic-value">1.89 Gb</td>
+                                <td class="traffic-value">1.13 Gb</td>
+                                <td class="traffic-value high">300.66 Mb</td>
+                                <td class="traffic-value">175.50 Mb</td>
+                                <td class="traffic-value">141.37 Mb</td>
+                            </tr>
+                            <tr>
+                                <td>DESAINTER-1 (SITE HOTSPOT)</td>
+                                <td><span class="traffic-badge hotspot">Hotspot</span></td>
+                                <td class="traffic-value high">1.19 Gb</td>
+                                <td class="traffic-value">778.49 Mb</td>
+                                <td class="traffic-value">477.91 Mb</td>
+                                <td class="traffic-value">128.08 Mb</td>
+                                <td class="traffic-value">74.48 Mb</td>
+                                <td class="traffic-value">44.88 Mb</td>
+                            </tr>
+                            <tr>
+                                <td>POP CIGUDEG (SITE HOTSPOT)</td>
+                                <td><span class="traffic-badge hotspot">Hotspot</span></td>
+                                <td class="traffic-value">607.32 Mb</td>
+                                <td class="traffic-value">360.83 Mb</td>
+                                <td class="traffic-value">214.57 Mb</td>
+                                <td class="traffic-value">76.21 Mb</td>
+                                <td class="traffic-value">31.93 Mb</td>
+                                <td class="traffic-value">19.28 Mb</td>
+                            </tr>
+                            <tr>
+                                <td>POP HAMBARO (SITE HOTSPOT)</td>
+                                <td><span class="traffic-badge hotspot">Hotspot</span></td>
+                                <td class="traffic-value">401.96 Mb</td>
+                                <td class="traffic-value">244.10 Mb</td>
+                                <td class="traffic-value">162.09 Mb</td>
+                                <td class="traffic-value">54.65 Mb</td>
+                                <td class="traffic-value">25.20 Mb</td>
+                                <td class="traffic-value">14.00 Mb</td>
+                            </tr>
+                            <tr>
+                                <td>DIST 400 (SITE HOTSPOT)</td>
+                                <td><span class="traffic-badge hotspot">Hotspot</span></td>
+                                <td class="traffic-value">452.00 Mb</td>
+                                <td class="traffic-value">215.45 Mb</td>
+                                <td class="traffic-value">187.40 Mb</td>
+                                <td class="traffic-value">150.60 Mb</td>
+                                <td class="traffic-value">22.05 Mb</td>
+                                <td class="traffic-value">8.70 Mb</td>
+                            </tr>
+                            <tr>
+                                <td>DESAINTER-2 (SITE HOTSPOT)</td>
+                                <td><span class="traffic-badge hotspot">Hotspot</span></td>
+                                <td class="traffic-value">300.54 Mb</td>
+                                <td class="traffic-value">189.05 Mb</td>
+                                <td class="traffic-value">176.55 Mb</td>
+                                <td class="traffic-value">48.19 Mb</td>
+                                <td class="traffic-value">21.07 Mb</td>
+                                <td class="traffic-value">15.63 Mb</td>
+                            </tr>
+                            <tr>
+                                <td>POP KALURAHAN (SITE HOTSPOT)</td>
+                                <td><span class="traffic-badge hotspot">Hotspot</span></td>
+                                <td class="traffic-value">234.60 Mb</td>
+                                <td class="traffic-value">121.24 Mb</td>
+                                <td class="traffic-value">115.23 Mb</td>
+                                <td class="traffic-value">30.84 Mb</td>
+                                <td class="traffic-value">13.41 Mb</td>
+                                <td class="traffic-value">3.82 Mb</td>
+                            </tr>
+                            <tr>
+                                <td>TOKOMULIA (SITE HOTSPOT)</td>
+                                <td><span class="traffic-badge hotspot">Hotspot</span></td>
+                                <td class="traffic-value">181.53 Mb</td>
+                                <td class="traffic-value">100.11 Mb</td>
+                                <td class="traffic-value">94.50 Mb</td>
+                                <td class="traffic-value">141.50 Mb</td>
+                                <td class="traffic-value">76.64 Mb</td>
+                                <td class="traffic-value">50.98 Mb</td>
+                            </tr>
+                            <tr>
+                                <td>POP CIBUNGBULANG (SITE HOTSPOT)</td>
+                                <td><span class="traffic-badge hotspot">Hotspot</span></td>
+                                <td class="traffic-value">67.81 Mb</td>
+                                <td class="traffic-value">38.33 Mb</td>
+                                <td class="traffic-value">38.55 Mb</td>
+                                <td class="traffic-value">11.49 Mb</td>
+                                <td class="traffic-value">4.46 Mb</td>
+                                <td class="traffic-value">4.95 Mb</td>
+                            </tr>
+                            <tr>
+                                <td>POP TELE (SITE HOTSPOT)</td>
+                                <td><span class="traffic-badge hotspot">Hotspot</span></td>
+                                <td class="traffic-value">57.96 Mb</td>
+                                <td class="traffic-value">23.59 Mb</td>
+                                <td class="traffic-value">12.50 Mb</td>
+                                <td class="traffic-value">13.68 Mb</td>
+                                <td class="traffic-value">2.58 Mb</td>
+                                <td class="traffic-value">1.18 Mb</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Traffic Summary Stats -->
+                <div class="stats-grid" style="margin-top: var(--spacing-xl); grid-template-columns: repeat(4, 1fr);">
+                    <div class="stat-card">
+                        <div class="stat-label"
+                            style="font-size: 0.85rem; font-weight: 600; color: var(--color-accent); margin-bottom: var(--spacing-xs);">
+                            CORE ROUTER</div>
+                        <div style="display: flex; justify-content: space-between; margin-top: var(--spacing-sm);">
+                            <div>
+                                <div class="stat-value" style="font-size: 1.2rem;">3.74 Gb</div>
+                                <div style="font-size: 0.7rem; color: var(--text-secondary);">Max In</div>
+                            </div>
+                            <div>
+                                <div class="stat-value" style="font-size: 1.2rem;">3.44 Gb</div>
+                                <div style="font-size: 0.7rem; color: var(--text-secondary);">Max Out</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label"
+                            style="font-size: 0.85rem; font-weight: 600; color: #10b981; margin-bottom: var(--spacing-xs);">
+                            SITE HOME</div>
+                        <div style="display: flex; justify-content: space-between; margin-top: var(--spacing-sm);">
+                            <div>
+                                <div class="stat-value" style="font-size: 1.2rem;">2.81 Gb</div>
+                                <div style="font-size: 0.7rem; color: var(--text-secondary);">Max In</div>
+                            </div>
+                            <div>
+                                <div class="stat-value" style="font-size: 1.2rem;">300.66 Mb</div>
+                                <div style="font-size: 0.7rem; color: var(--text-secondary);">Max Out</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label"
+                            style="font-size: 0.85rem; font-weight: 600; color: #f97316; margin-bottom: var(--spacing-xs);">
+                            SITE HOTSPOT</div>
+                        <div style="display: flex; justify-content: space-between; margin-top: var(--spacing-sm);">
+                            <div>
+                                <div class="stat-value" style="font-size: 1.2rem;">3.30 Gb</div>
+                                <div style="font-size: 0.7rem; color: var(--text-secondary);">Max In</div>
+                            </div>
+                            <div>
+                                <div class="stat-value" style="font-size: 1.2rem;">655.24 Mb</div>
+                                <div style="font-size: 0.7rem; color: var(--text-secondary);">Max Out</div>
+                            </div>
+                        </div>
+                        <span
+                            style="font-size: 0.65rem; color: var(--text-secondary); display: block; margin-top: var(--spacing-xs);">Total
+                            9 Hotspot</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" style="font-size: 1.8rem;">11</div>
+                        <div class="stat-label">Site Monitored</div>
+                        <span style="font-size: 0.7rem; color: var(--text-secondary);">All Sites</span>
+                    </div>
+                </div>
+
+                <!-- Footer Note -->
+                <div
+                    style="margin-top: var(--spacing-lg); padding: var(--spacing-sm) var(--spacing-md); background: rgba(59, 130, 246, 0.05); border-left: 3px solid var(--color-primary); border-radius: 4px; font-size: 0.825rem; color: var(--text-secondary); line-height: 1.5;">
+                    <span style="color: var(--color-warning);">📌</span> <strong>Note:</strong> Data menggunakan Max
+                    Inbound (RX/Download) dari grafik Daily (5 Minute Average). Inbound = Traffic masuk ke router/dari
+                    internet ke pelanggan.
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+         SLIDE 6: TRAFFIC GLOBAL & ANALYSIS
+         ================================ -->
+        <section class="slide" data-slide="5">
+            <header class="slide-header">
+                <div class="slide-header-left">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET" class="header-logo">
+                    <div class="slide-number">06 / 12</div>
+                </div>
+                <h2 class="slide-title">Traffic Global - All Sites</h2>
+                <p class="slide-description">Analisis pola traffic dan perbandingan dengan bulan sebelumnya</p>
+            </header>
+
+            <div class="slide-content" style="overflow-y: auto;">
+                <!-- Traffic Chart with Chart.js -->
+                <div class="traffic-chart-card" style="margin-bottom: var(--spacing-lg);">
+                    <div class="chart-box" style="height: 320px;">
+                        <canvas id="trafficInboundChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Traffic Pattern Analysis -->
+                <div class="card" style="margin-top: var(--spacing-lg);">
+                    <div class="card-header">
+                        <h3 class="card-title">📈 Analisis Pola Traffic</h3>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl);">
+                        <div>
+                            <h4 style="color: var(--color-warning); margin-bottom: 8px; font-size: 0.95rem;">⏰ Peak
+                                Hours</h4>
+                            <p style="font-size: 0.85rem;"><strong>Malam:</strong> 20:00 - 00:00 (tertinggi jam
+                                22:00)<br><strong>Siang:</strong> 12:00 - 16:00 (peak kedua)</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--color-success); margin-bottom: 8px; font-size: 0.95rem;">🌙 Off-Peak
+                                Hours</h4>
+                            <p style="font-size: 0.85rem;"><strong>Dini Hari:</strong> 04:00 - 06:00
+                                (terendah)<br><strong>Pagi:</strong> 06:00 - 08:00 (mulai naik)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Traffic Comparison Table -->
+                <div class="card" style="margin-top: var(--spacing-lg);">
+                    <div class="card-header">
+                        <h3 class="card-title">Perbandingan Traffic: Maret 2026 vs Februari 2026</h3>
+                    </div>
+                    <table class="traffic-comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Site</th>
+                                <th>Mar 2026 Max In</th>
+                                <th>Feb 2026 Max In</th>
+                                <th>Perubahan</th>
+                                <th>Trend</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>DISTRIBUSI PUBLIK</strong> (Core)</td>
+                                <td>3.74 Gb</td>
+                                <td>3.08 Gb</td>
+                                <td class="change-up">+0.66 Gb</td>
+                                <td>↑ 21.4%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>TO OLT</strong> (Home)</td>
+                                <td>2.81 Gb</td>
+                                <td>2.51 Gb</td>
+                                <td class="change-up">+0.30 Gb</td>
+                                <td>↑ 12.0%</td>
+                            </tr>
+                            <tr>
+                                <td>DESAINTER-1 (Hotspot)</td>
+                                <td>1.19 Gb</td>
+                                <td>1.09 Gb</td>
+                                <td class="change-up">+100.00 Mb</td>
+                                <td>↑ 9.2%</td>
+                            </tr>
+                            <tr>
+                                <td>POP CIGUDEG (Hotspot)</td>
+                                <td>607.32 Mb</td>
+                                <td>606.55 Mb</td>
+                                <td class="change-up">+0.77 Mb</td>
+                                <td>↑ 0.1%</td>
+                            </tr>
+                            <tr>
+                                <td>POP HAMBARO (Hotspot)</td>
+                                <td>401.96 Mb</td>
+                                <td>410.09 Mb</td>
+                                <td class="change-down">-8.13 Mb</td>
+                                <td>↓ 2.0%</td>
+                            </tr>
+                            <tr>
+                                <td>DIST 400 (Hotspot)</td>
+                                <td>452.00 Mb</td>
+                                <td>410.40 Mb</td>
+                                <td class="change-up">+41.60 Mb</td>
+                                <td>↑ 10.1%</td>
+                            </tr>
+                            <tr>
+                                <td>DESAINTER-2 (Hotspot)</td>
+                                <td>300.54 Mb</td>
+                                <td>342.94 Mb</td>
+                                <td class="change-down">-42.40 Mb</td>
+                                <td>↓ 12.4%</td>
+                            </tr>
+                            <tr>
+                                <td>POP KALURAHAN (Hotspot)</td>
+                                <td>234.60 Mb</td>
+                                <td>239.18 Mb</td>
+                                <td class="change-down">-4.58 Mb</td>
+                                <td>↓ 1.9%</td>
+                            </tr>
+                            <tr>
+                                <td>TOKOMULIA (Hotspot)</td>
+                                <td>181.53 Mb</td>
+                                <td>177.95 Mb</td>
+                                <td class="change-up">+3.58 Mb</td>
+                                <td>↑ 2.0%</td>
+                            </tr>
+                            <tr>
+                                <td>POP CIBUNGBULANG (Hotspot)</td>
+                                <td>92.80 Mb</td>
+                                <td>105.67 Mb</td>
+                                <td class="change-down">-12.87 Mb</td>
+                                <td>↓ 12.2%</td>
+                            </tr>
+                            <tr>
+                                <td>POP TELE (Hotspot)</td>
+                                <td>55.66 Mb</td>
+                                <td>52.89 Mb</td>
+                                <td class="change-up">+2.77 Mb</td>
+                                <td>↑ 5.2%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p
+                        style="font-size: 0.75rem; color: var(--text-secondary); margin-top: var(--spacing-md); font-style: italic;">
+                        📌 <strong>Note:</strong> Data menggunakan <strong>Max Inbound (RX/Download)</strong> dari
+                        grafik Daily (5 Minute Average).
+                        Inbound = Traffic masuk ke router/dari internet ke pelanggan.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+         SLIDE 7: FULL REPORT MARET
+         ================================ -->
+        <section class="slide">
+            <header class="slide-header">
+                <div class="slide-header-left">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET" class="header-logo">
+                    <div class="slide-number">07 / 12</div>
+                </div>
+                <h2 class="slide-title">Full Report Network Traffic</h2>
+                <p class="slide-description">Rangkuman komprehensif data traffic bulan Maret 2026</p>
+            </header>
+
+            <div class="slide-content" style="overflow-y: auto;">
+                <div class="card" style="margin-bottom: var(--spacing-xl);">
+                    <h3
+                        style="color: var(--color-primary); font-size: 1.1rem; margin-bottom: 12px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                        Kesimpulan Final & Analisa Global</h3>
+                    <ul style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; padding-left: 20px;">
+                        <li><strong>Trend:</strong> Trafik harian lebih tinggi dari rata-rata bulanan. Menunjukkan
+                            peningkatan penggunaan (bisa karena weekend/event).</li>
+                        <li><strong>Pola Trafik:</strong> Pola konsisten dan sehat. Peak malam di daily, peak Week 4 di
+                            monthly.</li>
+                        <li><strong>Status Jaringan:</strong> Stabil tanpa anomali. Distribusi didominasi Hotspot (~55%)
+                            dan Home (~35%).</li>
+                        <li><strong>Peringatan (Warning):</strong> Beban backbone nyata (Core) mencapai 3.74 Gbps. Mulai
+                            masuk zona medium-high utilization. Target upgrade sebelum tembus 5 Gbps.</li>
+                    </ul>
+                </div>
+
+                <div class="stats-grid"
+                    style="grid-template-columns: repeat(3, 1fr); margin-bottom: var(--spacing-xl);">
+                    <div class="stat-card">
+                        <div class="stat-label">HOTSPOT (Daily / Monthly Max)</div>
+                        <div class="stat-value" style="font-size: 1.25rem;">3.30 Gb <span
+                                style="font-size: 0.85rem; color:var(--text-secondary);">/ 3.43 Gb</span></div>
+                        <span class="stat-change up" style="color: var(--color-success);">Status Normal</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">HOME (Daily / Monthly Max)</div>
+                        <div class="stat-value" style="font-size: 1.25rem;">2.81 Gb <span
+                                style="font-size: 0.85rem; color:var(--text-secondary);">/ 2.68 Gb</span></div>
+                        <span class="stat-change up" style="color: var(--color-success);">Status Normal</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">CORE (Daily / Monthly Max)</div>
+                        <div class="stat-value" style="font-size: 1.25rem;">3.74 Gb <span
+                                style="font-size: 0.85rem; color:var(--text-secondary);">/ 3.61 Gb</span></div>
+                        <span class="stat-change up" style="color: var(--color-success);">Status Normal</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3
+                        style="color: var(--color-primary); font-size: 1.1rem; margin-bottom: 12px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                        Rekomendasi Tindak Lanjut</h3>
+                    <div
+                        style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); font-size: 0.9rem;">
+                        <div>
+                            <strong style="color: var(--text-primary);">Short & Mid Term:</strong>
+                            <ul style="color: var(--text-secondary); margin-top: 4px; padding-left: 18px;">
+                                <li>Monitor jam sibuk peak (20:00 - 22:00)</li>
+                                <li>Fokus pada site kontributor terbesar (DESAINTER-1, CIGUDEG)</li>
+                                <li>Load balancing trafik dan optimasi distribusi OLT</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong style="color: var(--text-primary);">Long Term:</strong>
+                            <ul style="color: var(--text-secondary); margin-top: 4px; padding-left: 18px;">
+                                <li>Siapkan skenario upgrade backbone secara terencana</li>
+                                <li>Target upgrade harus tercapai sebelum lonjakan trafik tembus 5 Gbps</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+         SLIDE 8: RINGKASAN DATA BULANAN
+         ================================ -->
+        <section class="slide">
+            <header class="slide-header">
+                <div class="slide-header-left">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET" class="header-logo">
+                    <div class="slide-number">08 / 12</div>
+                </div>
+                <h2 class="slide-title">Rekapitulasi Traffic 1 Bulan</h2>
+                <p class="slide-description">Agregasi trafik per minggu untuk periode Maret 2026</p>
+            </header>
+
+            <div class="slide-content" style="overflow-y: auto;">
+                <div class="card">
+                    <table class="traffic-table">
+                        <thead>
+                            <tr>
+                                <th>Kategori / Site</th>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
+                                <th>Week 4 (Peak)</th>
+                                <th>Analisa Singkat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: rgba(var(--color-primary-rgb), 0.03);">
+                                <td><strong>CORE ROUTER (Gbps)</strong></td>
+                                <td class="traffic-value">3.00 Gb</td>
+                                <td class="traffic-value">2.80 Gb</td>
+                                <td class="traffic-value">2.40 Gb</td>
+                                <td class="traffic-value high">3.40 Gb 🔺</td>
+                                <td style="font-size: 0.85rem;">Inbound & Outbound balance. Trafik sehat.</td>
+                            </tr>
+                            <tr style="background: rgba(var(--color-primary-rgb), 0.03);">
+                                <td><strong>SITE HOME (Gbps)</strong></td>
+                                <td class="traffic-value">2.10 Gb</td>
+                                <td class="traffic-value">1.90 Gb</td>
+                                <td class="traffic-value">1.60 Gb</td>
+                                <td class="traffic-value high">2.40 Gb 🔺</td>
+                                <td style="font-size: 0.85rem;">Sangat stabil. Growth akhir bulan selaras hotspot.</td>
+                            </tr>
+                            <tr style="background: rgba(var(--color-primary-rgb), 0.03);">
+                                <td><strong>SITE HOTSPOT (Gbps)</strong></td>
+                                <td class="traffic-value">2.61 Gb</td>
+                                <td class="traffic-value">2.09 Gb</td>
+                                <td class="traffic-value">1.88 Gb</td>
+                                <td class="traffic-value high">2.81 Gb 🔺</td>
+                                <td style="font-size: 0.85rem;">Growth +30% dari W3 ke W4. Faktor aktivitas user.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"
+                                    style="background: rgba(255, 255, 255, 0.05); color: var(--color-accent); text-align: center; font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">
+                                    DETAIL HOTSPOT TERBESAR (Mbps/Gbps)</td>
+                            </tr>
+                            <tr>
+                                <td>DESAINTER-1</td>
+                                <td>900 Mb</td>
+                                <td>750 Mb</td>
+                                <td>700 Mb</td>
+                                <td>1.00 Gb 🔺</td>
+                                <td rowspan="3" style="font-size: 0.85rem; vertical-align: middle;">3 site penyumbang
+                                    backbone utama.</td>
+                            </tr>
+                            <tr>
+                                <td>POP CIGUDEG</td>
+                                <td>450 Mb</td>
+                                <td>350 Mb</td>
+                                <td>300 Mb</td>
+                                <td>480 Mb 🔺</td>
+                            </tr>
+                            <tr>
+                                <td>DIST 400</td>
+                                <td>300 Mb</td>
+                                <td>260 Mb</td>
+                                <td>230 Mb</td>
+                                <td>320 Mb 🔺</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ================================
+         SLIDE 7: JOBDESK STATISTICS
+         ================================ -->
+        <section class="slide" data-slide="6">
+            <header class="slide-header">
+                <div class="slide-header-left">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET" class="header-logo">
+                    <div class="slide-number">09 / 12</div>
+                </div>
+                <h2 class="slide-title">Statistik Jobdesk</h2>
+                <p class="slide-description">Jumlah pekerjaan selesai, kategori jobdesk, dan distribusi per area</p>
+            </header>
+
+            <div class="slide-content">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl);">
+                    <!-- Left Column: Type Distribution -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Distribusi Tipe Jobdesk</h3>
+                        </div>
+
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>Troubleshooting</span><span>80</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>PSB</span><span>71</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 89%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>Maintenance</span><span>57</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 71%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>FO CUT</span><span>30</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 38%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>GANTI ALAT</span><span>13</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 16%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>PELEBARAN</span><span>10</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 13%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>DISMANTLE</span><span>10</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 13%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>INSTALASI</span><span>4</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 5%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>PINDAH RUMAH</span><span>3</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 4%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>Migrasi</span><span>1</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 1%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Area & Top Technicians -->
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-lg);">
+                        <!-- Area Distribution -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Distribusi Site/Area</h3>
+                            </div>
+                            <div class="stats-grid" style="grid-template-columns: repeat(2, 1fr);">
+                                <div class="stat-card" style="padding: var(--spacing-md);">
+                                    <div class="stat-value" style="font-size: 1.75rem;">159</div>
+                                    <div class="stat-label" style="font-size: 0.7rem;">HOME</div>
+                                </div>
+                                <div class="stat-card" style="padding: var(--spacing-md);">
+                                    <div class="stat-value" style="font-size: 1.75rem;">108</div>
+                                    <div class="stat-label" style="font-size: 0.7rem;">HOTSPOT</div>
+                                </div>
+                                <div class="stat-card" style="padding: var(--spacing-md);">
+                                    <div class="stat-value" style="font-size: 1.75rem;">7</div>
+                                    <div class="stat-label" style="font-size: 0.7rem;">POP</div>
+                                </div>
+                                <div class="stat-card" style="padding: var(--spacing-md);">
+                                    <div class="stat-value" style="font-size: 1.75rem;">5</div>
+                                    <div class="stat-label" style="font-size: 0.7rem;">SERVER</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Top Technicians -->
+                        <div class="card" style="flex: 1;">
+                            <div class="card-header">
+                                <h3 class="card-title">Top 5 Teknisi</h3>
+                            </div>
+                            <div class="data-table-wrapper" style="padding: 0; border: none;">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Nama Teknisi</th>
+                                            <th style="text-align: right;">Jobdesk</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>🥇</td>
+                                            <td>FAHMI FAUZUDIN</td>
+                                            <td style="text-align: right; color: var(--color-accent);">74</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🥈</td>
+                                            <td>ABDUL MATIN</td>
+                                            <td style="text-align: right; color: var(--color-accent);">69</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🥉</td>
+                                            <td>TAUFIK RAHMAN</td>
+                                            <td style="text-align: right; color: var(--color-accent);">68</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Jajat sudrajat</td>
+                                            <td style="text-align: right; color: var(--color-accent);">65</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>ANWAR LESMANA</td>
+                                            <td style="text-align: right; color: var(--color-accent);">64</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+         SLIDE 8: HOTSPOT ISSUE
+         ================================ -->
+        <section class="slide" data-slide="7">
+            <header class="slide-header">
+                <div class="slide-header-left">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET" class="header-logo">
+                    <div class="slide-number">10 / 12</div>
+                </div>
+                <h2 class="slide-title">Gangguan Jalur Hotspot</h2>
+                <p class="slide-description">Analisis gangguan hotspot periode Maret dan perbandingannya dengan bulan
+                    sebelumnya</p>
+            </header>
+
+            <div class="slide-content" style="overflow-y: auto;">
+                <div class="stats-grid" style="margin-bottom: var(--spacing-xl);">
+                    <div class="stat-card">
+                        <div class="stat-value" style="color: var(--color-success);">13</div>
+                        <div class="stat-label">Total Laporan</div>
+                        <span style="font-size: 0.7rem; color: var(--text-secondary);">1-31 Mar 2026</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Susah Login</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">4</div>
+                        <div class="stat-label">Lemot / Buffring</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" style="color: var(--color-success);">100%</div>
+                        <div class="stat-label">Resolved</div>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: var(--spacing-xl);">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Jenis Gangguan (Maret)</h3>
+                        </div>
+                        <ul class="conclusion-list">
+                            <li><strong>Susah Login</strong> - Laman login tidak muncul, kendala radius (5 kasus)</li>
+                            <li><strong>Lemot / Buffring</strong> - Koneksi terasa berat / sinyal lemah (4 kasus)</li>
+                            <li><strong>OFF Total / Jalur Putus</strong> - Alat mati, FO Cut, kabel putus (4 kasus)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">DATA PEMBANDING MARET VS FEBRUARI</h3>
+                        </div>
+                        <div class="data-table-wrapper"
+                            style="padding: 0; border: none; max-height: 220px; overflow-y: auto;">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Jenis Gangguan</th>
+                                        <th>Maret 2026</th>
+                                        <th>Februari 2026</th>
+                                        <th>Tren Perubahan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background: rgba(var(--color-primary-rgb), 0.05);">
+                                        <td><strong>Total Laporan</strong></td>
+                                        <td style="color: #10b981; font-weight: 600;">13 Kasus</td>
+                                        <td style="color: var(--text-secondary);">40 Kasus</td>
+                                        <td><span class="stat-change down" style="color: #10b981;">Turun Drastis
+                                                (-27)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Susah Login</td>
+                                        <td>5 Kasus</td>
+                                        <td>8 Kasus</td>
+                                        <td style="color: #10b981;">Berkurang (-3)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lemot / Buffring</td>
+                                        <td>4 Kasus</td>
+                                        <td>16 Kasus</td>
+                                        <td style="color: #10b981;">Signifikan Menurun (-12)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>OFF Total / LAN / FO Cut</td>
+                                        <td>4 Kasus</td>
+                                        <td>6 Kasus</td>
+                                        <td style="color: #10b981;">Berkurang (-2)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jaringan Tidak Stabil</td>
+                                        <td>0 Kasus</td>
+                                        <td>7 Kasus</td>
+                                        <td style="color: #10b981;">Clear / Nihil (-7)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lainnya (Radius/LOS)</td>
+                                        <td>0 Kasus</td>
+                                        <td>3 Kasus</td>
+                                        <td style="color: #10b981;">Clear / Nihil (-3)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <p
+                    style="font-size: 0.75rem; color: var(--text-secondary); margin-top: var(--spacing-md); font-style: italic;">
+                    📌 <strong>Note:</strong> Tingkat komplain hotspot menurun drastis sebesar 67.5% dibandingkan bulan
+                    Februari. Penanganan cepat seperti Ganti Alat, perbaikan Splicing FIBER OPTIC, dan optimasi Radio
+                    memberi dampak yang sangat besar pada keandalan jaringan.
+                </p>
+            </div>
+        </section>
+
+        <!-- ================================
+         SLIDE 9: COMPARISON
+         ================================ -->
+        <section class="slide" data-slide="8">
+            <header class="slide-header">
+                <div class="slide-header-left">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET" class="header-logo">
+                    <div class="slide-number">11 / 12</div>
+                </div>
+                <h2 class="slide-title">Perbandingan Bulanan</h2>
+                <p class="slide-description">Perbandingan performa jobdesk bulan Maret 2026 dengan Februari 2026</p>
+            </header>
+
+            <div class="slide-content">
+                <div class="comparison-grid">
+                    <!-- January Column -->
+                    <div class="comparison-column current">
+                        <h3 class="comparison-title">
+                            Maret 2026
+                            <span class="comparison-badge">Bulan Ini</span>
+                        </h3>
+                        <div class="stats-grid"
+                            style="grid-template-columns: 1fr 1fr; margin-bottom: var(--spacing-lg);">
+                            <div class="stat-card">
+                                <div class="stat-value" style="font-size: 2rem;">286</div>
+                                <div class="stat-label">Total</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value" style="font-size: 2rem;">279</div>
+                                <div class="stat-label">Selesai</div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>Troubleshooting</span><span>80</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>PSB</span><span>71</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 89%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>Maintenance</span><span>57</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 71%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>GANTI ALAT</span><span>13</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 16%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- December Column -->
+                    <div class="comparison-column">
+                        <h3 class="comparison-title">
+                            Februari 2026
+                            <span class="comparison-badge"
+                                style="background: rgba(156, 163, 175, 0.1); color: var(--text-secondary);">Bulan
+                                Lalu</span>
+                        </h3>
+                        <div class="stats-grid"
+                            style="grid-template-columns: 1fr 1fr; margin-bottom: var(--spacing-lg);">
+                            <div class="stat-card">
+                                <div class="stat-value" style="font-size: 2rem; color: var(--text-secondary);">345</div>
+                                <div class="stat-label">Total</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value" style="font-size: 2rem; color: var(--text-secondary);">342</div>
+                                <div class="stat-label">Selesai</div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>Maintenance</span><span>77</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 100%; background: linear-gradient(90deg, #6b7280, #9ca3af);"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>Troubleshooting</span><span>68</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 88%; background: linear-gradient(90deg, #6b7280, #9ca3af);"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>PSB</span><span>65</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 84%; background: linear-gradient(90deg, #6b7280, #9ca3af);"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-label"><span>GANTI ALAT</span><span>46</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 60%; background: linear-gradient(90deg, #6b7280, #9ca3af);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Changes Summary -->
+                <div class="card" style="margin-top: var(--spacing-xl);">
+                    <div class="card-header">
+                        <h3 class="card-title">Perubahan Signifikan</h3>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--spacing-md);">
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: 600; color: var(--color-success);">-59</div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">Total Jobdesk</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: 600; color: var(--color-danger);">+12</div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">Troubleshooting</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: 600; color: var(--color-success);">+6</div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">PSB</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: 600; color: var(--color-danger);">-20</div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">Maintenance</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.5rem; font-weight: 600; color: var(--color-success);">-33</div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">GANTI ALAT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+         SLIDE 10: CLOSING
+         ================================ -->
+        <section class="slide" data-slide="9">
+            <header class="slide-header">
+                <div class="slide-header-left">
+                    <img src="assets/img/SDNET-P.png" alt="SDNET" class="header-logo">
+                    <div class="slide-number">12 / 12</div>
+                </div>
+                <h2 class="slide-title">Kesimpulan & Rencana</h2>
+                <p class="slide-description">Kesimpulan akhir dan rencana peningkatan layanan bulan berikutnya</p>
+            </header>
+
+            <div class="slide-content">
+                <div class="conclusion-grid">
+                    <!-- Summary -->
+                    <div class="conclusion-card">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                style="width: 24px; height: 24px;">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            Ringkasan Pencapaian
+                        </h3>
+                        <ul class="conclusion-list">
+                            <li><strong style="color:var(--color-success)">Pencapaian Gemilang:</strong> Komplain
+                                pelanggan Hotspot menurun drastis sebesar <strong>67.5%</strong> (dari 40 sisa 13 kasus
+                                saja) hasil dari optimasi infrastruktur secara preventif.</li>
+                            <li>Traffic jaringan melayani utilisasi sangat tinggi dengan stabil, di mana beban
+                                <strong>Core Router mencapai puncak 3.74 Gbps</strong> tanpa kendala kritikal di sisi
+                                performa alat.
+                            </li>
+                            <li>Kinerja NOC sangat efisien dengan <strong>279 dari 286 Jobdesk terselesaikan (97.5%
+                                    Success Rate)</strong> secara on-time. Angka pekerjaan "Ganti Alat" juga anjlok
+                                tajam pertanda kestabilan hardware.</li>
+                            <li><strong>13 Major Incident</strong> selama bulan Maret (meliputi BGP Upstream Down, FO
+                                Cut besar-besaran, hingga insiden kebakaran Cibatok) berhasil dilalui dan di-_recover_
+                                dengan sangat tanggap.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Improvements -->
+                    <div class="conclusion-card improvements">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                style="width: 24px; height: 24px;">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                                <polyline points="17 6 23 6 23 12" />
+                            </svg>
+                            Rencana Peningkatan
+                        </h3>
+                        <ul class="conclusion-list">
+                            <li><strong>Capacity Planning:</strong> Utilisasi Core Router yang menyentuh batas 3.74 Gbps
+                                membutuhkan pantauan serius; siapkan opsi load-balance cadangan atau upgrade backbone
+                                sebelum meledak melampaui 4 Gbps di masa libur.</li>
+                            <li><strong>Mitigasi Bencana Alam & Eksternal:</strong> Menggalakkan patroli/maintenance
+                                rute kabel krusial mengingat lonjakan kasus FO Putus dan tiang miring akibat hujan/cuaca
+                                ekstrem di bulan Maret.</li>
+                            <li><strong>Fokus Redundancy Backbone Area:</strong> Memberikan prioritas _maintenance_ di
+                                area-area penyumbang traffic raksasa (DESAINTER-1 dan POP CIGUDEG) untuk menjamin
+                                stabilitas bisnis utama.</li>
+                            <li>Mempertahankan rutinitas <em>preventive repair</em> (perbaikan _splice_, repointing
+                                radio) yang sejauh ini absolut sukses memangkas tren komplain <em>Lemot/Buffering</em>
+                                pelanggan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Thank You -->
+                <div
+                    style="text-align: center; margin-top: var(--spacing-2xl); padding: var(--spacing-xl); background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                    <h2 style="margin-bottom: var(--spacing-md); color: var(--color-accent);">Terima Kasih</h2>
+                    <p style="font-size: 1.125rem;">Laporan disusun oleh Tim NOC SDNET</p>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary);">Generated: 05 April 2026 (Laporan
+                        Periode Maret)</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slideshow.js"></script>
+
+
+    <!-- Traffic Charts (Chart.js) -->
+    <script src="assets/js/traffic-charts.js"></script>
+</body>

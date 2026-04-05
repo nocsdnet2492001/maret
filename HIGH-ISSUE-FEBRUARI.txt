@@ -1,0 +1,133 @@
+==========
+FEBRUARI =
+============================================= CIBUNGBULANG ====================================================================
+
+RFO FINAL – LAPORAN PENANGANAN GANGGUAN
+
+Selamat Malam Pengguna & Mitra SDNET,
+Berikut kami sampaikan laporan akhir penanganan gangguan jaringan pada tanggal 16 Februari 2026:
+
+Tiket : SDN3032160226
+Status : CLOSED
+Segment : SERVER CIBUNGBULANG <> SITE CIARUTEN ILIR
+Down Time : 16-02-2026 18:30 WIB
+Uptime : 17-02-2026 00:10 WIB
+Durasi Gangguan : ± 5 Jam 40 Menit
+Area Terdampak : NAGRAK, CIMANGGIR, TEGALSALAM, CIARUTEN ILIR, PADMON
+Root Cause : FO CUT (Putus Fiber Optik)
+Action : Jumper ulang dan pemasangan closure baru
+
+Progress Penanganan
+
+18:30 WIB – Link terpantau LOS (Loss of Signal) pada sistem monitoring NOC.
+19:11 WIB – Tim teknis diberangkatkan menuju lokasi POP untuk pengecekan lapangan.
+19:27 WIB – Tim tiba di lokasi dan melakukan pengecekan jalur menggunakan OTDR.
+19:30 WIB – Hasil pengukuran OTDR menunjukkan indikasi titik putus pada jarak ±1,4 km di segmen ODP 3 – ODP 4 (Dukuh).
+19:58 WIB – Tim menemukan titik putus di area ODP 4, ODP dalam kondisi terlepas/copotan dan diduga akibat tindakan vandalisme.
+00:10 WIB – Proses perbaikan selesai dilakukan (splicing, jumper ulang, dan pemasangan closure baru). Link dinyatakan normal kembali (UP).
+
+Untuk informasi terkini seputar maintenance dan update jaringan, silakan bergabung di saluran resmi WhatsApp kami:
+👉 Join Saluran Resmi SDNET
+https://whatsapp.com/channel/0029VaYAfCT6WaKnZ04dYY0w
+
+Hormat kami,
+Network Operation Center (NOC)
+PT Sarana Digital Network
+
+============================================= LL-SDNET ( JAVA ) ====================================================================
+FO CUT MAIN LINK LL-SDNET JAVA ( 17 FEB 2026 )
+DOWN : 18.37
+UP : 20.40
+DOWNTIME : 2 jam 03 menit
+
+============================================= IFORTE ====================================================================
+( 24 FEB 2026 )
+Dengan ini kami informasikan bahwa saat ini Link termonitor sudah normal dan berikut detail Reason for Outage (RFO) atas gangguan yang terjadi : 
+
+Ticket : 02010064
+Customer : 039497 MULTIMEDIA-LINK-TECHNOLOGI
+Start Time : 17/02/2026 15:56 WIB 
+Clear time : 17/02/2026 18:12 WIB 
+DOWNTIME : 2 jam 16 menit
+Problem : Link Down 
+Root cause : Fo cut di jarak 12.3 Km dari Sentul 
+Action : Splice fo 
+
+
+============================================= LL-SDNET ( JAVA ) ====================================================================
+FO CUT MAIN LINK LL-SDNET JAVA ( 22 FEB 2026 )
+DOWN : 12.27
+UP : 13.13
+DOWNTIME : 46 MENIT 
+
+============================================= DENY ( MITRA ) ====================================================================
+Selamat Siang Pengguna & Mitra SDNET,
+Berikut kami sampaikan hasil akhir penanganan gangguan (RFO sementara) pada tanggal 22 FEBRUARI 2026:
+
+* Tiket : *SDN3100220226*
+* Status : *CLOSED*
+* Segment : *SERVER SITU UDIK <> SITE DENY CISAUK*
+* Down Time : *22-02-2026 13:03 WIB*
+* Up Time : *22-02-2026 16:51 WIB*
+* Durasi Gangguan : *3 Jam 48 Menit*
+* Area Terdampak : *SITE CISAUK – DENY CISAUK*
+* Root Cause : *FO CUT & REDAMAN TINGGI*
+* Action : *PENYAMBUNGAN ULANG KABEL PUTUS DAN BANDING*
+
+Progress Penanganan
+
+* 13:03 WIB – LINK TERPANTAU LOS 
+* 13:21 WIB - TIM TIBA LOKASI & TERTUNDA KARENA HUJAN
+* 13:33 WIB - OTDR DI SITE DENY TO ODP TERBACA CUT DI 500M -/+
+* 13:40 WIB - TIM LAGI PENGECEKAN KABEL 
+* 15:07 WIB - TIM MASIH PROGRESS MENELUSURI KABEL KARENA REDAMAN TINGGI -39
+* 16.40 WIB - TIM MENEMUKAN KABEL BANDING
+* 16.43 WUB - TIM PENYAMBUNGAN ULANG KABEL BANDING
+* 16.50 WIB - TIM PERAPIHAN KABEL
+* 16.51 WIB - LINK TERPANTAU UP
+
+Untuk informasi terkini seputar maintenance dan update jaringan, silakan bergabung di saluran resmi WhatsApp kami:
+👉 Join Saluran Resmi SDNET
+https://whatsapp.com/channel/0029VaYAfCT6WaKnZ04dYY0w
+
+Hormat kami,
+Network Operation Center (NOC)
+PT Sarana Digital Network
+
+============================================= ACONK  ====================================================================
+Selamat Sore Pengguna & Mitra SDNET,
+Berikut kami sampaikan hasil akhir penanganan gangguan (RFO sementara) pada tanggal 23 FEBRUARI 2026:
+
+* Tiket : *SDN3108230226*
+* Status : *CLOSED*
+* Segment : *POP KALURAHAN <> SITE ACONK*
+* Down Time : *23-02-2026 14:10 WIB*
+* Up Time : *23-02-2026 15:03 WIB*
+* Durasi Gangguan : *53 menit*
+* Area Terdampak : *SITE ACONK*
+* Root Cause : *FO CUT PON 7 HSGQ KALURAHAN AKIBAT AKTIVITAS PENEBANGAN POHON*
+* Action : *jumper fo 100 m*
+
+Progress Penanganan
+
+* 14:10 WIB – LINK TERPANTAU LOS 
+* 14:10 WIB - TIM MENUJU LOKASI
+* 15:03 WIB - LINK UP
+
+Untuk informasi terkini seputar maintenance dan update jaringan, silakan bergabung di saluran resmi WhatsApp kami:
+👉 Join Saluran Resmi SDNET
+https://whatsapp.com/channel/0029VaYAfCT6WaKnZ04dYY0w
+
+Hormat kami,
+Network Operation Center (NOC)
+PT Sarana Digital Network
+
+============================================= IP PUBLIK ====================================================================
+
+SABTU 28 FEBRUARI
+IP PUBLIK TERBLACKLIST RBL - KOTOR MENGAKIBATKAN MENGAKSES KE BEBERAPA APLIKASI / WEBSITE TIDAK BISA KARENA REPUTASI IP YANG KOTOR NAMUN SUDAH DI FIX OLEH TIM PUSAT IDC
+TERDAMPAK HANYA 1 HARI
+
+============================================= HOTSPOT ====================================================================
+
+- SUSAH LOGIN & INTERNET KURANG OPTIMAL DI SITE HOTSPOT MENGGUNAKAN PERANGKAT ZIMMLINK

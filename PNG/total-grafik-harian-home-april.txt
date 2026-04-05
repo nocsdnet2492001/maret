@@ -1,0 +1,37 @@
+📊 SITE HOME – TO OLT
+
+(Max In: 2.81 Gb | Avg: 1.89 Gb)
+| Jam | In (Gbps)          |
+| --- | ------------------ |
+| 18  | 2.30               |
+| 20  | 2.60               |
+| 22  | 2.70               |
+| 00  | 1.80               |
+| 02  | 0.90               |
+| 04  | 0.50               |
+| 06  | 0.80               |
+| 08  | 1.60               |
+| 10  | 2.10               |
+| 12  | 2.30               |
+| 14  | 2.20               |
+| 16  | 2.10               |
+| 18  | 2.50               |
+| 20  | 2.70               |
+| 22  | **2.81 🔺 (Peak)** |
+| 00  | 1.60               |
+
+🔢 REKAP TRAFIK
+
+Max In: 2.81 Gbps
+Average In: 1.89 Gbps
+Current In: 1.13 Gbps
+
+🔍 ANALISA (SIAP LAPORAN)
+Jam sibuk: 19.00 – 22.00
+Peak trafik: ±22.00 (2.81 Gbps)
+Jam terendah: 03.00 – 05.00
+Pola sangat mirip dengan hotspot → user aktif malam hari
+Trafik backbone HOME terlihat:
+Stabil
+Tidak ada spike abnormal
+Masih dalam batas aman (belum saturasi)

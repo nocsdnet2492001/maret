@@ -1,0 +1,57 @@
+📊 SITE HOME – TO OLT (MONTHLY)
+
+(Max In: 2.68 Gb | Avg: 1.64 Gb)
+| Week | In (Gbps)   |
+| ---- | ----------- |
+| W1   | 2.10        |
+| W2   | 1.90        |
+| W3   | 1.60        |
+| W4   | **2.40 🔺** |
+
+🔢 REKAP TRAFIK
+
+Max In: 2.68 Gbps
+Average In: 1.64 Gbps
+Current In: 1.91 Gbps
+
+📊 AGREGASI PER WEEK (Gbps)
+| Week | In (Gbps)          |
+| ---- | ------------------ |
+| W1   | 2.10               |
+| W2   | 1.90               |
+| W3   | 1.60               |
+| W4   | **2.40 🔺 (Peak)** |
+
+🔍 ANALISA BULANAN (SIAP LAPORAN)
+📈 Pola Trafik
+Trafik relatif:
+Stabil di Week 1–2
+Turun di Week 3
+Naik signifikan di Week 4
+
+👉 Pola sama dengan HOTSPOT → korelasi user behavior kuat
+
+🔥 Insight Penting
+Trafik HOME:
+Lebih stabil dibanding HOTSPOT
+Tidak terlalu fluktuatif
+Peak mendekati:
+👉 2.5–2.7 Gbps
+⚠️ Analisa Kapasitas
+Rata-rata: 1.6 Gbps
+Peak: 2.68 Gbps
+
+👉 Artinya:
+
+Masih aman untuk link 10G
+Tapi sudah mulai terlihat trend naik di akhir bulan
+📊 Karakter Trafik
+Pola harian tetap:
+Peak malam
+Pola bulanan:
+Naik di akhir bulan (Week 4)
+🚀 KESIMPULAN
+Trafik HOME stabil & sehat
+Tidak ada anomali drop/spike
+Growth terlihat di akhir bulan
+Sinkron dengan trafik HOTSPOT

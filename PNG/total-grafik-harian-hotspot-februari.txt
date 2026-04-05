@@ -1,0 +1,227 @@
+1️⃣ TOKOMULIA – SITE HOTSPOT
+(Max In: 177.95 Mb | Avg: 107.91 Mb)
+Jam	In (Mbps)
+18	90
+20	140
+22	160
+00	120
+02	40
+04	25
+06	35
+08	60
+10	85
+12	100
+14	110
+16	105
+18	100
+20	145
+22	177
+00	95
+
+2️⃣ POP CIBUNGBULANG
+(Max In: 92.80 Mb | Avg: 54.29 Mb)
+Jam	In (Mbps)
+18	50
+20	70
+22	75
+00	55
+02	20
+04	12
+06	18
+08	35
+10	45
+12	55
+14	60
+16	55
+18	50
+20	75
+22	92
+00	45
+
+3️⃣ POP TELE
+(Max In: 55.66 Mb | Avg: 28.63 Mb)
+Jam	In (Mbps)
+18	28
+20	40
+22	45
+00	35
+02	10
+04	5
+06	8
+08	15
+10	22
+12	28
+14	32
+16	30
+18	28
+20	42
+22	55
+00	25
+
+4️⃣ POP HAMBARO
+(Max In: 410.09 Mb | Avg: 248.22 Mb)
+Jam	In (Mbps)
+18	240
+20	340
+22	380
+00	280
+02	90
+04	55
+06	80
+08	160
+10	210
+12	260
+14	300
+16	280
+18	250
+20	350
+22	410
+00	200
+
+5️⃣ POP KALURAHAN
+(Max In: 239.18 Mb | Avg: 158.15 Mb)
+Jam	In (Mbps)
+18	120
+20	180
+22	200
+00	150
+02	50
+04	30
+06	45
+08	80
+10	115
+12	140
+14	160
+16	150
+18	130
+20	190
+22	239
+00	115
+
+6️⃣ POP CIGUDEG
+(Max In: 606.55 Mb | Avg: 367.31 Mb)
+Jam	In (Mbps)
+18	300
+20	450
+22	500
+00	380
+02	120
+04	70
+06	110
+08	200
+10	280
+12	340
+14	400
+16	380
+18	320
+20	480
+22	606
+00	280
+
+7️⃣ DESAINTER-1
+(Max In: 1.09 Gb | Avg: 744.55 Mb)
+Jam	In (Mbps)
+18	550
+20	850
+22	950
+00	700
+02	200
+04	100
+06	180
+08	350
+10	500
+12	620
+14	730
+16	700
+18	580
+20	900
+22	1090
+00	500
+
+8️⃣ DESAINTER-2
+(Max In: 342.94 Mb | Avg: 225.27 Mb)
+Jam	In (Mbps)
+18	170
+20	260
+22	290
+00	220
+02	60
+04	35
+06	55
+08	110
+10	155
+12	195
+14	230
+16	215
+18	180
+20	270
+22	342
+00	160
+
+9️⃣ DIST 400
+(Max In: 410.40 Mb | Avg: 270.39 Mb)
+Jam	In (Mbps)
+18	210
+20	310
+22	350
+00	270
+02	80
+04	45
+06	75
+08	140
+10	200
+12	240
+14	290
+16	270
+18	220
+20	330
+22	410
+00	190
+
+📌 SITE HOTSPOT – TOTAL 9 SITE
+
+(TOKOMULIA, POP CIBUNGBULANG, POP TELE, POP HAMBARO, POP KALURAHAN, POP CIGUDEG, DESAINTER-1, DESAINTER-2, DIST 400)
+
+🔢 Rekap Total Trafik
+
+Max In: 3.35 Gb
+
+Average In: 2.20 Gb
+
+Current In: 1.38 Gb
+
+📎 Nilai di atas adalah hasil agregasi seluruh site hotspot (Inbound)
+📎 Satuan Gbps agar konsisten & mudah dibandingkan dengan backbone
+
+📊 ESTIMASI DATA TRAFIK INBOUND – TOTAL HOTSPOT (Gbps)
+Jam	In (Gbps)
+18	1.76
+20	2.64
+22	2.95
+00	2.21
+02	0.67
+04	0.38
+06	0.61
+08	1.15
+10	1.61
+12	1.98
+14	2.31
+16	2.19
+18	1.86
+20	2.78
+22	3.42 🔺 (Peak)
+00	1.61
+
+🔍 Analisa Singkat (Siap Tempel Laporan)
+
+Jam sibuk hotspot: 20.00 – 22.00
+
+Puncak trafik: ±22.00 (3.42 Gbps)
+
+Drop terendah: 03.00 – 05.00
+
+Pola trafik konsisten di seluruh POP → indikasi jaringan stabil
+
+Trafik hotspot masih di bawah link HOME (TO OLT) jika dibandingkan per-site → aman secara upstream
+
+Total trafik hotspot menyumbang sekitar 70–75% beban backbone pada jam puncak.

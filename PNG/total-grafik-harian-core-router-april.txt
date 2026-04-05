@@ -1,0 +1,45 @@
+📊 DISTRIBUSI PUBLIK – CORE ROUTER
+
+(Max In: 3.74 Gb | Avg: 2.45 Gb)
+| Jam | In (Gbps)          |
+| --- | ------------------ |
+| 18  | 2.20               |
+| 20  | 3.20               |
+| 22  | 3.60               |
+| 00  | 2.80               |
+| 02  | 1.20               |
+| 04  | 0.80               |
+| 06  | 1.10               |
+| 08  | 2.10               |
+| 10  | 2.80               |
+| 12  | 3.00               |
+| 14  | 2.90               |
+| 16  | 2.80               |
+| 18  | 3.40               |
+| 20  | 3.60               |
+| 22  | **3.74 🔺 (Peak)** |
+| 00  | 1.90               |
+
+🔢 REKAP TRAFIK
+
+Max In: 3.74 Gbps
+Average In: 2.45 Gbps
+Current In: 1.40 Gbps
+
+🔍 ANALISA (SIAP LAPORAN)
+Jam sibuk: 19.00 – 22.00
+Peak trafik: ±22.00 (3.74 Gbps)
+Jam terendah: 03.00 – 05.00
+Pola sama dengan:
+HOTSPOT
+HOME (OLT)
+👉 artinya distribusi trafik sinkron & normal
+📊 INSIGHT PENTING (CORE LEVEL)
+Trafik CORE mendekati 4 Gbps
+Selisih tipis antara:
+Inbound (3.74 Gbps)
+Outbound (3.44 Gbps)
+👉 menandakan trafik balance (tidak berat sebelah)
+Tidak ada spike aneh → network stabil
+Sudah masuk kategori:
+⚠️ Medium–High utilization backbone

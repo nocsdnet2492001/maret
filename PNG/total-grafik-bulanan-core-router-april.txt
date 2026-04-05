@@ -1,0 +1,55 @@
+📊 DISTRIBUSI PUBLIK – CORE ROUTER (MONTHLY)
+
+(Max In: 3.61 Gb | Avg: 2.30 Gb)
+| Week | In (Gbps)   |
+| ---- | ----------- |
+| W1   | 3.00        |
+| W2   | 2.80        |
+| W3   | 2.40        |
+| W4   | **3.40 🔺** |
+
+🔢 REKAP TRAFIK
+
+Max In: 3.61 Gbps
+Average In: 2.30 Gbps
+Current In: 1.61 Gbps
+
+📊 AGREGASI PER WEEK (Gbps)
+| Week | In (Gbps)          |
+| ---- | ------------------ |
+| W1   | 3.00               |
+| W2   | 2.80               |
+| W3   | 2.40               |
+| W4   | **3.40 🔺 (Peak)** |
+
+🔍 ANALISA BULANAN (SIAP LAPORAN)
+📈 Pola Trafik
+Trafik:
+Stabil di Week 1–2
+Turun di Week 3
+Naik kembali di Week 4
+
+👉 Sama persis dengan:
+
+HOTSPOT
+HOME
+
+✔️ Artinya: traffic pattern global konsisten
+
+🔥 Insight Core
+CORE mencerminkan trafik real backbone
+Peak mendekati:
+👉 3.6 Gbps
+Inbound & Outbound hampir balance:
+✔️ distribusi trafik sehat
+⚠️ Analisa Kapasitas
+Average: 2.3 Gbps
+Peak: 3.6 Gbps
+
+👉 Status:
+
+Aman di link 10G
+Mulai terasa jika di bawah 5G
+📊 Karakter Trafik
+Spike harian terlihat jelas → pola user aktif
+Tidak ada flat/drop aneh → tidak ada gangguan besar

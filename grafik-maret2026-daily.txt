@@ -1,0 +1,65 @@
+- TOKOMULIA ( SITE HOTSPOT )
+"Daily" Graph (5 Minute Average)
+Daily Graph
+Max In: 181.53Mb; Average In: 100.11Mb; Current In: 65.17Mb;
+Max Out: 141.50Mb; Average Out: 76.64Mb; Current Out: 50.98Mb;
+
+- POP CIBUNGBULANG ( SITE HOTSPOT )
+"Daily" Graph (5 Minute Average)
+Daily Graph
+Max In: 67.81Mb; Average In: 38.33Mb; Current In: 31.40Mb;
+Max Out: 11.49Mb; Average Out: 4.46Mb; Current Out: 4.95Mb;
+
+- POP TELE ( SITE HOTSPOT )
+"Daily" Graph (5 Minute Average)
+Daily Graph
+Max In: 57.96Mb; Average In: 23.59Mb; Current In: 8.51Mb;
+Max Out: 13.68Mb; Average Out: 2.58Mb; Current Out: 1.18Mb;
+
+- POP HAMBARO ( SITE HOTSPOT )
+"Daily" Graph (5 Minute Average)
+Daily Graph
+Max In: 401.96Mb; Average In: 244.10Mb; Current In: 121.51Mb;
+Max Out: 54.65Mb; Average Out: 25.20Mb; Current Out: 14.00Mb;
+
+- POP KALURAHAN ( SITE HOTSPOT )
+"Daily" Graph (5 Minute Average)
+Daily Graph
+Max In: 234.60Mb; Average In: 121.24Mb; Current In: 41.89Mb;
+Max Out: 30.84Mb; Average Out: 13.41Mb; Current Out: 3.82Mb;
+
+- POP CIGUDEG ( SITE HOTSPOT )
+"Daily" Graph (5 Minute Average)
+Daily Graph
+Max In: 607.32Mb; Average In: 360.83Mb; Current In: 188.24Mb;
+Max Out: 76.21Mb; Average Out: 31.93Mb; Current Out: 19.28Mb;
+
+- DESAINTER-1 ( SITE HOTSPOT )
+"Daily" Graph (5 Minute Average)
+Daily Graph
+Max In: 1.19Gb; Average In: 778.49Mb; Current In: 411.94Mb;
+Max Out: 128.08Mb; Average Out: 74.48Mb; Current Out: 44.88Mb;
+
+- DESAINTER-2 ( SITE HOTSPOT )
+"Daily" Graph (5 Minute Average)
+Daily Graph
+Max In: 300.54Mb; Average In: 189.05Mb; Current In: 82.61Mb;
+Max Out: 48.19Mb; Average Out: 21.07Mb; Current Out: 15.63Mb;
+
+- DIST 400 ( SITE HOTSPOT )
+"Daily" Graph (5 Minute Average)
+Daily Graph
+Max In: 452.00Mb; Average In: 215.45Mb; Current In: 63.80Mb;
+Max Out: 150.60Mb; Average Out: 22.05Mb; Current Out: 8.70Mb;
+
+- DISTRIBUSI PUBLIK ( CORE ROUTER )
+"Daily" Graph (5 Minute Average)
+Daily Graph
+Max In: 3.74Gb; Average In: 2.45Gb; Current In: 1.40Gb;
+Max Out: 3.44Gb; Average Out: 2.37Gb; Current Out: 1.39Gb;
+
+- TO OLT  ( SITE HOME )
+"Daily" Graph (5 Minute Average)
+Daily Graph
+Max In: 2.81Gb; Average In: 1.89Gb; Current In: 1.13Gb;
+Max Out: 300.66Mb; Average Out: 175.50Mb; Current Out: 141.37Mb;

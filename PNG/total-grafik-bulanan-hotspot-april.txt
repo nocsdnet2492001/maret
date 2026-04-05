@@ -1,0 +1,138 @@
+📊 SITE HOTSPOT – MONTHLY REPORT
+
+1️⃣ TOKOMULIA
+
+(Max In: 190.57 Mb | Avg: 106.31 Mb)
+| Week | In (Mbps) |
+| ---- | --------- |
+| W1   | 150       |
+| W2   | 120       |
+| W3   | 110       |
+| W4   | 140       |
+
+2️⃣ POP CIBUNGBULANG
+
+(Max In: 80.30 Mb | Avg: 35.38 Mb)
+| Week | In (Mbps) |
+| ---- | --------- |
+| W1   | 55        |
+| W2   | 40        |
+| W3   | 35        |
+| W4   | 60        |
+
+3️⃣ POP TELE
+
+(Max In: 48.79 Mb | Avg: 22.95 Mb)
+| Week | In (Mbps) |
+| ---- | --------- |
+| W1   | 35        |
+| W2   | 25        |
+| W3   | 20        |
+| W4   | 40        |
+
+4️⃣ POP HAMBARO
+
+(Max In: 388.15 Mb | Avg: 216.65 Mb)
+| Week | In (Mbps) |
+| ---- | --------- |
+| W1   | 300       |
+| W2   | 240       |
+| W3   | 220       |
+| W4   | 310       |
+
+5️⃣ POP KALURAHAN
+
+(Max In: 255.22 Mb | Avg: 133.31 Mb)
+| Week | In (Mbps) |
+| ---- | --------- |
+| W1   | 180       |
+| W2   | 140       |
+| W3   | 120       |
+| W4   | 200       |
+
+6️⃣ POP CIGUDEG
+
+(Max In: 591.11 Mb | Avg: 325.87 Mb)
+| Week | In (Mbps) |
+| ---- | --------- |
+| W1   | 450       |
+| W2   | 350       |
+| W3   | 300       |
+| W4   | 480       |
+
+7️⃣ DESAINTER-1
+
+(Max In: 1.17 Gb | Avg: 695.68 Mb)
+| Week | In (Mbps) |
+| ---- | --------- |
+| W1   | 900       |
+| W2   | 750       |
+| W3   | 700       |
+| W4   | 1000      |
+
+8️⃣ DESAINTER-2
+
+(Max In: 316.60 Mb | Avg: 188.27 Mb)
+| Week | In (Mbps) |
+| ---- | --------- |
+| W1   | 240       |
+| W2   | 190       |
+| W3   | 170       |
+| W4   | 260       |
+
+9️⃣ DIST 400
+
+(Max In: 390.52 Mb | Avg: 244.79 Mb)
+| Week | In (Mbps) |
+| ---- | --------- |
+| W1   | 300       |
+| W2   | 260       |
+| W3   | 230       |
+| W4   | 320       |
+
+📌 TOTAL SITE HOTSPOT (MONTHLY)
+
+🔢 REKAP TOTAL TRAFIK
+
+Max In: 3.43 Gbps
+Average In: 1.97 Gbps
+Current In: 1.36 Gbps
+
+📊 AGREGASI PER WEEK (Gbps)
+| Week | In (Gbps)          |
+| ---- | ------------------ |
+| W1   | 2.61               |
+| W2   | 2.09               |
+| W3   | 1.88               |
+| W4   | **2.81 🔺 (Peak)** |
+
+🔍 ANALISA BULANAN (SIAP LAPORAN)
+📈 Pola Trafik
+Trafik cenderung:
+Turun di Week 2–3
+Naik signifikan di Week 4
+Pola ini biasanya:
+👉 dipengaruhi aktivitas user (gajian, akhir bulan, dll)
+🔥 Kontributor Terbesar
+DESAINTER-1
+POP CIGUDEG
+DIST 400 / HAMBARO
+
+👉 Ini backbone utama hotspot
+
+⚠️ Insight Penting
+Tidak ada penurunan ekstrem → jaringan stabil
+Variasi antar minggu masih normal
+Growth terlihat di akhir bulan (+30% dari W3 ke W4)
+📊 Karakter Trafik
+Konsisten dengan daily:
+Peak malam hari
+Monthly menunjukkan:
+👉 kapasitas masih cukup, tapi mulai padat di peak
+🚀 KESIMPULAN BESAR
+Rata-rata trafik hotspot: ~2 Gbps
+Peak bulanan: >3.4 Gbps
+Trend: naik di akhir bulan
+Status jaringan:
+✅ Stabil
+⚠️ Mulai mendekati kapasitas jika growth berlanjut
